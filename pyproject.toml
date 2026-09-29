@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mplpb-image"
+version = "1.1.0"
+description = "A generator-only image studio whose outputs are MPLPB pages in a local-web seed."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Mitchell D. McPhetridge" }]
+
+[project.scripts]
+mplpb-image = "mplpb_image.__main__:_entry"
+
+[tool.setuptools.packages.find]
+include = ["mplpb_image*"]
